@@ -276,6 +276,16 @@
         <h3 class="project-title">DesBank</h3>
         <span class="project-tag">View Details →</span>
       </div>
+    <!-- AUTOSINK -->
+<div class="project-card reveal" onclick="openModal('autosink')">
+  <div class="project-logo-wrap">
+    <img src="autosink.jpg" alt="AutoSink"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+    <div class="project-logo-fallback"><i class="fas fa-faucet"></i></div>
+  </div>
+  <h3 class="project-title">AutoSink</h3>
+  <span class="project-tag">View Details →</span>
+</div>
         <!-- SAFIRA — in progress -->
 <div class="project-card reveal project-card-wip">
   <div class="project-logo-wrap">
@@ -339,6 +349,34 @@
       </div>
     </div>
   </div>
+
+  <div id="modal-autosink" class="modal-overlay" onclick="closeModal(event,'autosink')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModalBtn('autosink')"><i class="fas fa-times"></i></button>
+    <h2 class="modal-title"><span class="glow-text">AutoSink</span></h2>
+
+    <!-- PUT YOUR DEFENSE/PROJECT PHOTO HERE — name it autosink_defense.jpg -->
+    <div class="defense-photo-frame">
+      <img src="autosink2.jpg" alt="AutoSink Defense"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="defense-photo-fallback"><i class="fas fa-users"></i><span>Defense Photo</span></div>
+    </div>
+
+    <p class="modal-overview">An automatic sink system built with steel sheet and metal frames that hands-free dispenses soap, water, and dries — all triggered by ultrasonic sensors and powered by Arduino.</p>
+    <h4>Key Features</h4>
+    <ul>
+      <li>Automatic soap dispensing via ultrasonic sensor detection</li>
+      <li>Touchless water flow control</li>
+      <li>Automatic hand dryer activation</li>
+      <li>Steel sheet and metal frame housing construction</li>
+      <li>Arduino-controlled sensor logic and relay system</li>
+    </ul>
+    <h4>Components Used</h4>
+    <div class="modal-tags">
+      <span>Arduino</span><span>Ultrasonic Sensors</span><span>Relay Module</span><span>Solenoid Valve</span><span>Steel Frame</span><span>DC Pump</span>
+    </div>
+  </div>
+</div>
 
   <!-- SERVICES -->
   <section id="services">
